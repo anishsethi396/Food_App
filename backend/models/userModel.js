@@ -20,12 +20,12 @@ const userSchema = mongoose.Schema({
     password: {
         type: String,
         required: true,
-        minLength: 8
+        minLength: 5
     },
     confirmPassword: {
         type: String,
         required: true,
-        minLength: 8,
+        minLength: 5,
         validate: () => {
             return this.confirmPassword == this.password
         }

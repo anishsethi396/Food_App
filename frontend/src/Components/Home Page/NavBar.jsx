@@ -13,7 +13,7 @@ function NavBar() {
                     <li><Link to='/allPlans'>Plans</Link></li>
                     {user ? (
                         <>
-                            <li><Link to='/profilePage'>{user.name}</Link></li>
+                            <li><Link to='/profilePage'>{user.data.name}</Link></li>
                             <li><Link onClick={logout}>Logout</Link></li>
                         </>
                     ) : (
